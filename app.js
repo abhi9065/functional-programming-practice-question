@@ -20,7 +20,7 @@ const capitalizeArray = val => val.toUpperCase()
 
 const printingMap = myArray.map(capitalizeArray)
 
-console.log(printingMap)                        */
+console.log(printingMap)   */                      
 
 
 
@@ -190,7 +190,7 @@ const students = [
 
     // 12/- Write an ES6 function that takes an array of objects containing employee information (name, age, salary) and returns an array with only the employees who earn a salary above 22000 and age is above 25.
     
-    
+   /* 
     const employees = [
         {name: "Abhay", age: 25, salary: 20000},
         {name: "Joice", age: 30, salary: 35000},
@@ -210,5 +210,165 @@ const students = [
     const filter = filterBySalary(employees , 25 ,22000)
 
 
-    console.log(filter)
-       
+    console.log(filter)                            */
+
+
+
+     // 13/- Given an array of objects representing people, write an ES6 function to return a new array containing only the names of the people.
+
+
+     /*
+     const people = [
+      { name: 'Raj', age: 28 },
+      { name: 'Swapnil', age: 42 },
+      { name: 'Anushka', age: 35 }
+    ];
+
+    const filterTheName = person => people.map(people => people.name)
+
+    console.log(filterTheName(people))                    */
+
+
+
+
+    // 14/-    Given an array, write an ES6 function to return a new array with all the elements multiplied by 5
+
+/*
+    const numbers =[1,2,3,4];
+
+    const multiplyByFive = num => numbers.map(num => num *5 ) 
+    
+    console.log(multiplyByFive(numbers))             */
+
+
+
+
+
+     // 15/-   Given employee’s data, write an ES6 function which greets them with a personalized message for onboarding.
+
+
+/*
+     const employeeData = [
+	{name: "ram", dept: "marketer"}, 
+	{name: "Radha", dept: "SDE"},
+	{name: "shyam", dept: "finance professional"},
+]
+
+const greetEmployeeMessages = employee => employeeData.map(emp)   */
+
+
+
+
+
+// 16/-  Write an ES6 function that takes an array of objects representing books and returns an array with only the titles of each book.
+
+
+/*
+const books = [
+  { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' },
+  { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+  { title: '1984', author: 'George Orwell' },
+  { title: 'Pride and Prejudice', author: 'Jane Austen' },
+];
+
+
+const getBookTitles =  book => book.map(book => book.title)
+
+console.log(getBookTitles(books))                                 */
+
+
+
+
+// 17/- Write an ES6 function which takes out the names of the students whose first letter starts with ‘A’.
+
+
+
+/*
+const studentName = ["Ram", "Anjali", "Arpit", "Bhanu Kumar", "Jaya", "Ankit", "shayam"]
+
+const studentArray = student => student.filter(student => student.match('A'))
+
+console.log(studentArray(studentName))                             */
+
+
+
+
+
+// 18/-Write an ES6 function which filters out the products which have a price greater than 40.
+
+/*
+
+const productData = [
+  {prodName: "Dairy Milk", price: 10},
+  {prodName: "Dairy Milk Silk", price: 70},
+  {prodName: "Five Star", price: 20},
+  {prodName: "Mars", price: 50}
+]
+
+
+const getProducts = product => product.filter(product => product.price > 40)
+
+console.log(getProducts(productData))                                */
+
+
+
+
+// 19/-Write an ES6 function that takes an array of numbers and returns the first number that is divisible by 7.
+
+
+/*
+const numbers = [1, 2, 3, 21, 14, 7];
+
+const isDivisibleBy7 = num => num.find(num => num % 7 === 0)
+
+console.log(isDivisibleBy7(numbers))                 */
+
+
+
+
+// 20/-Write an ES6 function that takes an array of strings and returns the first string that is longer than 8 characters.
+
+
+/*
+const names = ["Mohan", "Anjali", "Geetanjali", "Ankit", "Bhanu Kumar", "Ramakrishnan",  "shayam"]
+
+const isNameGfeater = name => name.find(name => name.length > 8)
+
+console.log(isNameGfeater(names))                                 */
+
+
+
+// 21/- Write an ES6 function that takes an array of objects representing students with properties name and grade. Return the first student object that has a grade of "A".
+
+
+/*
+const students = [
+  { name: "John", grade: "B" },
+  { name: "Mary", grade: "A" },
+  { name: "Sam", grade: "C" },
+  { name: "Sarah", grade: "A" },
+];
+
+const findStudentWithGradeA = student => student.find(student => student.grade === 'A')
+
+console.log(findStudentWithGradeA(students))              */
+
+
+
+
+
+// 22/-   Write an ES6 function that takes an array of objects representing students with properties name, grade and scholarship. Return the first student object that has a grade of "A" or they are a scholarship student.
+
+/*
+const students = [
+  { name: "John", grade: "B", scholarship: false },
+  { name: "Mary", grade: "B", scholarship: true },
+  { name: "Sam", grade: "A", scholarship: false },
+  { name: "Sarah", grade: "A", scholarship: true },
+];
+
+
+const findStudent = student => student.find(student => student.grade.match('B') && student.scholarship)
+
+console.log(findStudent(students))                    */
+
